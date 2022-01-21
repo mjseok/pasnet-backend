@@ -25,6 +25,16 @@ jobs:
       with:
         java-version: '11'
         distribution: 'temurin'
+    
+    - name: permission gradlew
+      run: chmod +x ./gradlew
+    
+    - name: check current path
+      run: pwd
+      
+    - name: check directories
+      run: ls -al
+    
     - name: Build with Gradle
       uses: gradle/gradle-build-action@v2.1.0
       with:

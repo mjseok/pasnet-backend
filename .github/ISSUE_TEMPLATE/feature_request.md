@@ -1,20 +1,24 @@
 ---
-name: Feature request
-about: Suggest an idea for this project
+name: 기능 추가
+about: 추가하고 싶은 기능 명세 작성
 title: "[ENH]"
 labels: ":rocket: Enhancement"
 assignees: ''
 
 ---
 
-**Is your feature request related to a problem? Please describe.**
-A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]
+## 1. 개요
+기능 구현의 목적이나 이유
 
-**Describe the solution you'd like**
-A clear and concise description of what you want to happen.
+## 2. 구현 방법
+구현 방법을 제시하고 싶다면..
 
-**Describe alternatives you've considered**
-A clear and concise description of any alternative solutions or features you've considered.
+## 3. 필수 기능
+'이것이 없으면 이 기능을 구현한 의미가 없다!' 라고 할만한 기능
 
-**Additional context**
-Add any other context or screenshots about the feature request here.
+## 4. 추가적 기능   
+'이거 있으면 더 좋겠는데...?' 같은 기능
+
+---
+### 자유 작성란 
+전달하고 싶은 내용을 아무거나 작성해주세요.

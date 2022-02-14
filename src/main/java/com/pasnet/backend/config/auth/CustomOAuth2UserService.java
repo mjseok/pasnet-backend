@@ -2,10 +2,9 @@ package com.pasnet.backend.config.auth;
 
 import com.pasnet.backend.config.auth.dto.OAuthAttributes;
 import com.pasnet.backend.config.auth.dto.SessionUser;
-import com.pasnet.backend.domain.user.User;
-import com.pasnet.backend.domain.user.UserRepository;
+import com.pasnet.backend.domain.user.entity.User;
+import com.pasnet.backend.domain.user.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
-import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.oauth2.client.userinfo.DefaultOAuth2UserService;
 import org.springframework.security.oauth2.client.userinfo.OAuth2UserRequest;

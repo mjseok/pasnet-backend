@@ -1,4 +1,4 @@
-package com.pasnet.backend.domain.user;
+package com.pasnet.backend.domain.user.entity;
 
 import lombok.Builder;
 import lombok.Getter;

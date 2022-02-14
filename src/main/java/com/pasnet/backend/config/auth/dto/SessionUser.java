@@ -1,6 +1,6 @@
 package com.pasnet.backend.config.auth.dto;
 
-import com.pasnet.backend.domain.user.User;
+import com.pasnet.backend.domain.user.entity.User;
 import lombok.Getter;
 
 import java.io.Serializable;

@@ -1,7 +1,7 @@
 package com.pasnet.backend.config.auth.dto;
 
-import com.pasnet.backend.domain.user.Role;
-import com.pasnet.backend.domain.user.User;
+import com.pasnet.backend.domain.user.entity.Role;
+import com.pasnet.backend.domain.user.entity.User;
 import lombok.Builder;
 import lombok.Getter;
 

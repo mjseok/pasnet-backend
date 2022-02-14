@@ -5,17 +5,16 @@
 # This workflow will build a Java project with Gradle and cache/restore any dependencies to improve the workflow execution time
 # For more information see: https://help.github.com/actions/language-and-framework-guides/building-and-testing-java-with-gradle
 
-name: Java CI with Gradle
+name: Build Test With Gradle
 
 on:
   push:
-    branches: [ main ]
-# pull_request:
-#   branches: [ main ]
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main, develop ]
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
@@ -25,16 +24,16 @@ jobs:
       with:
         java-version: '11'
         distribution: 'temurin'
-        
-    - name: check current path
-      run: pwd
-      
-    - name: check directories
-      run: ls -al
-    
+
     - name: permission gradlew
       run: chmod +x ./gradlew
-      
+      shell: bash
+
+    - name: Clean with Gradle
+      uses: gradle/gradle-build-action@v2.1.0
+      with:
+          arguments: clean
+
     - name: Build with Gradle
       uses: gradle/gradle-build-action@v2.1.0
       with:
